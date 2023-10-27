@@ -1,0 +1,17 @@
+chaque node contient les proprietes suivantes:
+- children: retourne un tableau contenant les ELEMENTS fils
+- parentElement: retourne un element qui est le parent (balise)
+- parentNode: retourne un noeud qui est le parent (NODE)
+- childNodes: retourne un tableau contenant les Noeuds fils (balise, commentaire,text..)
+
+Element{
+proprietes: innerText
+            innerHTML
+            value => reservee aux inputs
+            attributes
+methodes:  setAttribute(name,value)
+            getAttribute(name)
+            removeAttribute(name)
+            remove()
+
+}

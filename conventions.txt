@@ -1,0 +1,4 @@
+- index.html: il faut toujours avoir une page nommee 'index'
+- il faut creer au minimum 3 dossiers: css,img et js (respecter la casse)
+- le css principal doit etre appeler : main.css ou bien style.css
+- le js principal doit etre appeler : main.js

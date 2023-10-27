@@ -1,0 +1,22 @@
+
+#x{
+    background-color: red;
+}
+img{
+    width: 300px;
+}
+button{
+    color:blue;
+}
+body>.x{
+    color:red;
+}
+.teste{
+    text-decoration: underline;
+    border: 1px solid red;
+}
+
+.imp{
+    color:blue;
+    background-color: brown;
+}

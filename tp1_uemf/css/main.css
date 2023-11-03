@@ -97,6 +97,9 @@ main .sectionListe table{
     border-collapse: collapse;
     width: 100%;
 }
+main .sectionListe table tr:nth-child(even){
+   background-color: lightgray;
+}
 main .sectionListe table td,main .sectionListe table th{
     border: 1px solid black;
     padding: 10px;
@@ -111,4 +114,11 @@ footer{
     color: white;
     width: 100%;
     padding: 20px;
+}
+.delete{
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    background: red;
 }

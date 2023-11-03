@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -27,18 +28,21 @@
             <h2>Formulaire</h2>
             <div>
                 <div>
-                    <input type="text" placeholder="nom">
-                    <input type="text" placeholder="prenom">
-                    <input type="text" placeholder="age">
+                    <input id="nomInput" type="text" placeholder="nom">
+                    <input id="prenomInput" type="text" placeholder="prenom">
+                    <input id="ageInput" type="text" placeholder="age">
                 </div>
                 <div class="controls">
-                    <button>annuler</button>
-                    <button>ajouter</button>
+                    <button id="annulerBtn">annuler</button>
+                    <button id="ajouterBtn">ajouter</button>
                 </div>
             </div>
         </section>
         <section class="sectionListe">
-            <h2>Liste des etudiants</h2>
+            <div>
+                <h2>Liste des etudiants</h2>
+                <button id="resetBtn">reset</button>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -48,37 +52,14 @@
                         <th>options</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="tbody">
+                    <!-- <tr>
                         <td>tmimi</td>
                         <td>mehdi</td>
                         <td>31</td>
                         <td><button class="delete">X</button></td>
                     </tr>
-                    <tr>
-                        <td>tmimi</td>
-                        <td>mehdi</td>
-                        <td>31</td>
-                        <td><button>X</button></td>
-                    </tr>
-                    <tr>
-                        <td>tmimi</td>
-                        <td>mehdi</td>
-                        <td>31</td>
-                        <td><button>X</button></td>
-                    </tr>
-                    <tr>
-                        <td>tmimi</td>
-                        <td>mehdi</td>
-                        <td>31</td>
-                        <td><button>X</button></td>
-                    </tr>
-                    <tr>
-                        <td>tmimi</td>
-                        <td>mehdi</td>
-                        <td>31</td>
-                        <td><button>X</button></td>
-                    </tr>
+                -->
                 </tbody>
             </table>
         </section>

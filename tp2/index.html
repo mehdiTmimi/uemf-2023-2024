@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 >Tp1 - groupe 2</h1>
+        <button id="resetBtn" >reset</button>
+    </header>
+    <main>
+        <section class="formSection">
+            <h2>Form</h2>
+            <div>
+                <div class="inputDiv">
+                    <div>
+                        <label for="baliseInput">Balise</label>
+                        <select id="baliseInput">
+                            <option value="h1">h1</option>
+                            <option value="h2">h2</option>
+                            <option value="h3">h3</option>
+                            <option value="h4">h4</option>
+                            <option value="h5">h5</option>
+                            <option value="h6">h6</option>
+                            <option value="p">p</option>
+                            <option value="a">a</option>
+                        </select>
+                    </div>
+                    <!-- div*3>label+input -->
+                    <div>
+                        <label for="contenuInput">Contenu</label>
+                        <input id="contenuInput" type="text">
+                    </div>
+                    <div>
+                        <label for="colorInput">Color</label>
+                        <input id="colorInput" type="color">
+                    </div>
+                    <div class="hidden">
+                        <label for="hrefInput">href</label>
+                        <input id="hrefInput" type="text">
+                    </div>
+                    
+                </div>
+                <div>
+                    <button id="validerBtn">valider</button>
+                </div>
+            </div>
+        </section>
+        <section class="resultatSection">
+            <h2>resultat</h2>
+            <ul id="resultatListe">
+               <!-- <li>
+                    <a target="_blank" style="color:blue;" href="http://www.google.com">salut</a>
+                    <button class="delete">supprimer</button>
+                </li>
+               -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>@copyright estf 2023 info</p>
+    </footer>
+</body>
+
+</html>

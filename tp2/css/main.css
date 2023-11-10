@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+header button{
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition-duration: 1s;
+}
+
+header button:hover{ /* survol */
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transform: rotate(360deg);
+}
+header button:active{ /* click */
+    text-decoration: underline;
+    color: blanchedalmond;
+}
+main{
+    display: flex;
+}
+main section{
+
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(173, 216, 230, 0.138);
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.2);
+
+}
+main .formSection{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+main .resultatSection{
+    flex: 1;
+}
+main .resultatSection li{
+    display: flex;
+    justify-content: space-between;
+}
+main .resultatSection>h2{
+    text-align: center;
+}
+main .formSection .inputDiv>div{
+    margin: 10px 0px;
+}
+main .formSection .inputDiv>div>*{
+    width: 100px;   
+    display: inline-block;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+    border: 0px;
+    border: 5px;
+    padding: 5px;
+}
+
+.hidden{
+    display: none!important;
+}

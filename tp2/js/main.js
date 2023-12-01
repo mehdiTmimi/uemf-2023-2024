@@ -5,7 +5,7 @@ let colorInput = document.getElementById("colorInput");
 let hrefInput = document.getElementById("hrefInput");
 let validerBtn = document.getElementById("validerBtn");
 let resultatListe = document.getElementById("resultatListe");
-
+const url = "http://127.0.0.1:3000/elements"
 //traitements
 let add = (tag, content, color, hrefAttr) => {
   //creation des elements
@@ -72,7 +72,26 @@ contenuInput.addEventListener("keyup", () => {
     contenuInput.classList.add("valid");
   }
 });
-add("h1", "salut", "red");
-add("h2", "salut", "blue");
-add("a", "salut", "blue", "https://www.google.com/");
-add("h3", "salut", "gree");
+const loadElements = () =>{
+  const xhr = new XMLHttpRequest()
+  xhr.open("GET",url,true)
+  xhr.addEventListener("load",()=>{
+    if(xhr.status==200)
+    {
+      // l'affichage
+      let datas = JSON.parse(xhr.response)
+      datas.forEach(data=>{
+        let {id,balise,contenu,color,href} = data
+        add(balise,contenu,color,href)
+      })
+    }
+    else
+      alert("error on loading data")
+  })
+  xhr.addEventListener("error",()=>{
+    alert("error on loading data")
+  })
+  xhr.send()
+ 
+}
+loadElements()

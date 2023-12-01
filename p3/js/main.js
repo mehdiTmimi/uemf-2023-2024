@@ -1,5 +1,5 @@
 const tbody = document.getElementById('tbody')
-
+const urlApi ="http://127.0.0.1:3000/etudiants"
 const addEtudiantToTable = (etudiant)=>{
     const tr = document.createElement("tr")
     const tdId = document.createElement("td")
@@ -23,7 +23,8 @@ const addEtudiantToTable = (etudiant)=>{
 }
 const loadEtudiants = ()=>{
     const ajax = new XMLHttpRequest()
-    ajax.open("GET","http://10.12.48.240:3000/etudiants",false)
+    ajax.open("GET",urlApi,false)
+    //ajax.setRequestHeader("Content-Type","application/json")
     ajax.send()
     let etudiants = JSON.parse(ajax.response)
     etudiants.forEach(etudiant => {
@@ -31,3 +32,21 @@ const loadEtudiants = ()=>{
     });
 }
 loadEtudiants()
+
+const sendDataToServer =(nom,age)=>{
+    //ajax
+    const xhr = new XMLHttpRequest()
+    xhr.open("POST",urlApi,false)
+    xhr.setRequestHeader("Content-Type","application/json")
+    const data = {
+        nom,
+        age
+    }
+    const jsonData= JSON.stringify(data)
+    xhr.send(jsonData)
+    if(xhr.status==201)
+    {
+       alert("insertion reussi")
+    }
+    else alert("error")
+}

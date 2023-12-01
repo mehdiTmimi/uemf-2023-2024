@@ -1,0 +1,254 @@
+{
+  "etudiants": [
+    {
+      "id": 2,
+      "nom": "tmimi",
+      "age": 31
+    },
+    {
+      "nom": "alaoui",
+      "age": 31,
+      "id": 4
+    },
+    {
+      "nom": "Med",
+      "age": 24,
+      "id": 10
+    },
+    {
+      "nom": "sami",
+      "age": 20,
+      "id": 14
+    },
+    {
+      "nom": " nn hh ",
+      "age": 90,
+      "id": 18
+    },
+    {
+      "nom": " nn hh ",
+      "age": 90,
+      "id": 20
+    },
+    {
+      "nom": "KRIMOOOO",
+      "age": 22,
+      "id": 21
+    },
+    {
+      "nom": "SERGINI 2.0",
+      "age": 11,
+      "id": 23
+    },
+    {
+      "nom": "ziad chahyd",
+      "age": 22,
+      "id": 25
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 26
+    },
+    {
+      "nom": "cheramat",
+      "age": "22",
+      "id": 27
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 28
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 29
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 30
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 31
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 32
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 33
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 34
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 35
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 36
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 37
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 38
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 39
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 40
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 41
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 42
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 43
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 44
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 45
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 46
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 47
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 48
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 49
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 50
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 51
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 52
+    },
+    {
+      "nom": "rachiv show",
+      "age": 90,
+      "id": 53
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 54
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 55
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 56
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 57
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 58
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 59
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 60
+    },
+    {
+      "nom": "rachid show",
+      "age": 90,
+      "id": 61
+    },
+    {
+      "nom": "j vs aime",
+      "age": 90,
+      "id": 62
+    },
+    {
+      "nom": "j vs aime",
+      "age": 90,
+      "id": 63
+    },
+    {
+      "nom": "j vs aime",
+      "age": 90,
+      "id": 64
+    }
+  ],
+  "matieres": [
+    {
+      "id": 1,
+      "nom": "maths"
+    },
+    {
+      "id": 2,
+      "nom": "arabe"
+    }
+  ]
+}

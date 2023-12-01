@@ -55,10 +55,22 @@ resetBtn.addEventListener("click", () => {
 });
 
 baliseInput.addEventListener("change", () => {
-  if (baliseInput.value == "a") 
-        hrefInput.parentElement.classList.remove("hidden");
-   else 
-        hrefInput.parentElement.classList.add("hidden");
+  if (baliseInput.value == "a")
+    hrefInput.parentElement.classList.remove("hidden");
+  else hrefInput.parentElement.classList.add("hidden");
+});
+
+contenuInput.addEventListener("keyup", () => {
+  console.log(contenuInput.value);
+  if (contenuInput.value == "" || contenuInput.value.length<3) {
+    validerBtn.setAttribute("disabled", "");
+    contenuInput.classList.add("error");
+    contenuInput.classList.remove("valid");
+  } else {
+    validerBtn.removeAttribute("disabled");
+    contenuInput.classList.remove("error");
+    contenuInput.classList.add("valid");
+  }
 });
 add("h1", "salut", "red");
 add("h2", "salut", "blue");

@@ -39,13 +39,18 @@ validerBtn.addEventListener("click", () => {
   let color = colorInput.value;
   let href = hrefInput.value;
 
-  add(tag, content, color, href);
+  addToServer(tag, content, color, href,()=>{
+    add(tag, content, color, href);
 
-  //vider le formulaire
-  tag.selectedIndex = 0;
-  content.value = "";
-  color.value = "#000000ff";
-  href.value = "";
+    //vider le formulaire
+    tag.selectedIndex = 0;
+    content.value = "";
+    color.value = "#000000ff";
+    href.value = "";
+  },()=>{
+    alert("error")
+  })
+ 
 });
 let resetFct = () => {
   [...resultatListe.children].forEach((ele) => ele.remove());
@@ -95,3 +100,23 @@ const loadElements = () =>{
  
 }
 loadElements()
+
+const addToServer = (tag,contenu,color,href,successfn,echecfn)=>{
+  const xhr = new XMLHttpRequest()
+  xhr.open("POST",url,true)
+  xhr.setRequestHeader("Content-Type","application/json")
+  let data = {
+    balise:tag,
+    contenu,
+    color,
+    href
+  }
+  let jsonData = JSON.stringify(data)
+  xhr.addEventListener("load",()=>{
+    if(xhr.status==201)
+        successfn(xhr.response)
+    else
+      echecfn()
+  })
+  xhr.send(jsonData)
+}

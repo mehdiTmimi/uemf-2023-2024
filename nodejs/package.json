@@ -4,6 +4,10 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "mehdi":"echo ok",
+    "start":"node main.js",
+    "initDb":"node utils/db.js",
+    "ali":"cat package.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
